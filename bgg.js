@@ -38,13 +38,10 @@
 
 var bgg = require('bgg')(options);
 
-
-//bgg('user', {name: 'maverickmind', guilds:1})
-//  .then(function(results){
-//    console.log(results);
-//  });
-//
-
+bgg('user', {name: 'maverickmind', guilds:1})
+  .then(function(results){
+    //console.log(results);
+  });
 
 //collection spits out just titles, includes expansions
 bgg('collection', {
@@ -56,12 +53,13 @@ bgg('collection', {
     i = 0,
     title;
 
-  for(i;i<item.length;i++) {
-    title =item[i].name['$t'];
-    console.log("========");
-    console.log(title);
-    console.log("========");
-
-  }
-
+//  console.log("title!", item);
+  //for(i;i<item.length;i++) {
+  //  title =item[i].name['$t'];
+  //  console.log("========");
+  //  console.log(title);
+  //  console.log("========");
+  //}
 });
+
+module.exports = bgg;

@@ -1,0 +1,15 @@
+{
+  "name": "myLib",
+  "version": "1.0.0",
+  "description": "Display my library",
+  "main": "bgg.js",
+  "scripts": {
+    "dev" : "nodemon index.js"
+  },
+  "author": "T Ellis",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
